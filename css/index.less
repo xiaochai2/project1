@@ -1,0 +1,584 @@
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    background: #f3f5f7;
+    height: 6000px;
+}
+// 头部
+.header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 42px;
+    // logo模块
+    .logo{
+        float: left;
+        width: 195px;
+        height: 42px;
+    }
+    //导航模块
+    .nav{
+        float: left;
+        height: 42px;
+        margin-left: 55px;
+        li{
+            float: left;
+            margin: 0 15px;
+            a{
+                display: block;
+                padding: 0 10px;
+                height: 42px;
+                line-height: 42px;
+                font-size: 18px;
+                color: #050505;
+                &:hover{
+                    border-bottom: 2px solid #00a4ff;
+                }
+            }
+           
+        }
+    }
+    // 搜索模块
+    .search{
+        float: left;
+        margin-left: 50px;
+        width: 410px;
+        height: 42px;
+        input{
+            float: left;
+            padding: 0;
+            padding-left: 18px;
+            width: 341px;
+            height: 40px;
+            border: 1px solid #00a4ff;
+            border-right: none;
+            outline: none;
+            font-size: 14px;
+            color: #bfbfbf;
+        }
+        button{
+            float: left;
+            width: 50px;
+            height: 42px;
+            // 按钮自带有边框
+            //按钮掉下来的原因是:两个行内块元素之间有空隙
+            //解决:让他们浮动起来
+            border: 0;
+            background: url(../images/btn.png);
+        }
+    }
+    // 用户模块
+    .user{
+        float: right;
+        margin-right: 35px;
+        width: 125px;
+        height: 42px;
+       
+    }
+}
+//banner
+.banner{
+    height: 420px;
+    background: #1c036c;
+    .w{
+        height: 420px;
+        background:url(../images/banner2.png) no-repeat top center;
+        .subnav{
+            float: left;
+            width: 192px;
+            height: 420px;
+            background-color: rgba(0, 0, 0, 0.3);
+            ul li{
+                padding-left: 20px;
+                height: 45px;
+                line-height: 45px;
+            }
+            ul li a{
+                font-size: 14px;
+                color: #fff;
+                &:hover{
+                    color: #00b4ff;
+                }
+                span{
+                    float: right;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .course{
+            float: right;
+            margin-top: 50px;
+            width: 230px;
+            height: 300px;
+            background-color: #fff;
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+                height: 47px;
+                background-color: #9bceea;
+                text-align: center;
+                line-height: 47px;
+            }
+            .bd{
+                padding: 0 20px;
+                ul li{
+                    padding: 15px 0;
+                    border-bottom: 1px solid #eaeaea;
+                    h4{
+                        font-size: 16px;
+                    }
+                    p{
+                        margin-top: 5px;
+                        font-size: 12px;
+                        color: #efefef;
+                    }
+                }
+                a{
+                    display: block;
+                    margin-top: 5px;
+                    height: 38px;
+                    line-height: 38px;
+                    text-align: center;
+                    font-weight: 700;
+                    color: #00a4ff;
+                    border: 1px solid #22b0ff;
+                }
+            }
+        }
+    }
+}
+// 精品推荐导航
+.goods{
+    margin-top: 10px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.1);
+    h3{
+        float: left;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #00a4ff;
+    }
+    ul{
+        float: left;
+        margin-left: 30px;
+        li{
+            float:left;
+           a{
+            font-size: 16px;
+            color:#050505;
+            padding: 0 30px;
+            border-left: 1px solid #bfbfbf;
+           }
+        }
+    }
+    .modify{
+        float: right;
+        margin-right: 30px;
+        font-size: 14px;
+        color: #00a4ff;
+    }
+}
+// 精品推荐
+.box{
+    margin-top: 30px;
+    height: 600px;
+    .box-hd{
+        height: 40px;
+        h3{
+            float: left;
+            font-size: 20px;
+            color: #494949;
+        }
+        a{
+            margin-top: 10px;
+            margin-right: 30px;
+            float: right;
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+    }
+    .box-bd{
+        ul{
+            // 因为加了右外边距父元素装不下所以掉下去
+            width: 1225px;
+        }
+        ul li{
+            position: relative;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            width: 228px;
+            height: 270px;
+            background-color: #fff;
+            em{
+                position: absolute;
+                top: 4px;
+                right: -5px;
+            }
+            .img{
+                width: 100%;
+            }
+            h4{
+                font-size: 14px;
+                color: #050505;
+                margin: 20px 20px 25px 20px;
+            }
+            .info{
+                margin: 0 20px;
+                font-size: 12px;
+                color: #999;
+                span{
+                    color: #ff7c2d;
+                }
+            }
+        }
+    }
+}
+// 入门编程
+.introduction-box{
+    margin-top: 20px;
+    height: 450px;
+    .hd{
+        height: 60px;
+        line-height: 60px;
+        div{
+            float: left;
+            font-size: 20px;
+            color: #494949;
+        }
+        ul{
+            float: left;
+            margin-left: 300px;
+            li{
+                float: left;
+                a{
+                    font-size: 16px;
+                    color: #868686;
+                    padding: 0 30px;
+                    &:hover{
+                        color: #3eb0fe;
+                    }
+                }
+            }
+        }
+        .more{
+            float: right;
+            margin-right: 30px;
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+    }
+    .bd{
+        .bd-left{
+            float: left;
+            width: 230px;
+            height: 390px;
+            background:url(../images/pic2.png) no-repeat center top;
+        }
+        .bd-right{
+            float: right;
+            width: 960px;
+            height: 390px;
+            .bd-right-top{
+                img{
+                    width: 100%;
+                }
+            }
+            .bd-right-bottom{
+                margin-top: 17px;
+                ul{
+                    width: 980px;
+                }
+                ul li{
+                    float: left;
+                    margin-left: 20px;
+                    width: 225px;
+                    height: 270px;
+                    &:nth-child(1){
+                        margin-left: 0;
+                    }
+                   img{
+                       width: 100%;
+                   }
+                   h4{
+                       margin: 25px 0 20px 20px;
+                       font-size: 14px;
+                       color: #050505;
+                   }
+                   p{
+                       margin-left: 20px;
+                       font-size: 12px;
+                       color: #999;
+                       span{
+                           color: #ff7c2d;
+                       }
+                   }
+                }
+            }
+        }
+    }
+}
+// 数据分析师
+.data-box{
+    margin-top: 20px;
+    height: 450px;
+    .hd{
+        height: 60px;
+        line-height: 60px;
+        div{
+            float: left;
+            font-size: 20px;
+            color: #494949;
+        }
+        ul{
+            float: left;
+            margin-left: 300px;
+            li{
+                float: left;
+                a{
+                    font-size: 16px;
+                    color: #868686;
+                    padding: 0 30px;
+                    &:hover{
+                        color: #3eb0fe;
+                    }
+                }
+            }
+        }
+        .more{
+            float: right;
+            margin-right: 30px;
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+    }
+    .bd{
+        .bd-left{
+            float: left;
+            width: 230px;
+            height: 390px;
+            background:url(../images/pic2.png) no-repeat center top;
+        }
+        .bd-right{
+            float: right;
+            width: 960px;
+            height: 390px;
+            .bd-right-top{
+                img{
+                    width: 100%;
+                }
+            }
+            .bd-right-bottom{
+                margin-top: 17px;
+                ul{
+                    width: 980px;
+                }
+                ul li{
+                    float: left;
+                    margin-left: 20px;
+                    width: 225px;
+                    height: 270px;
+                    &:nth-child(1){
+                        margin-left: 0;
+                    }
+                   img{
+                       width: 100%;
+                   }
+                   h4{
+                       margin: 25px 0 20px 20px;
+                       font-size: 14px;
+                       color: #050505;
+                   }
+                   p{
+                       margin-left: 20px;
+                       font-size: 12px;
+                       color: #999;
+                       span{
+                           color: #ff7c2d;
+                       }
+                   }
+                }
+            }
+        }
+    }
+}
+// 机器学习
+.machine-box{
+    margin-top: 20px;
+    height: 327px;
+    .hd{
+        height: 60px;
+        line-height: 60px;
+        div{
+            float: left;
+            font-size: 20px;
+            color: #494949;
+        }
+        ul{
+            float: left;
+            margin-left: 300px;
+            li{
+                float: left;
+                a{
+                    font-size: 16px;
+                    color: #868686;
+                    padding: 0 30px;
+                    &:hover{
+                        color: #3eb0fe;
+                    }
+                }
+            }
+        }
+        .more{
+            float: right;
+            margin-right: 30px;
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+    }
+    .bd{
+
+        ul li{
+            float: left;
+            width: 228px;
+            height: 270px;
+            margin-left: 15px;
+            &:nth-child(1){
+                margin-left: 0;
+            }
+            img{
+                width: 100%;
+            }
+            h4{
+                margin: 25px 0 20px 20px;
+                font-size: 14px;
+                color: #050505;
+            }
+            p{
+                margin-left: 20px;
+                font-size: 12px;
+                color: #999;
+                span{
+                    color: #ff7c2d;
+                }
+            }
+        }
+    }
+}
+// 后端开发工程师
+.after-box{
+    margin-top: 10px;
+    height: 327px;
+    .hd{
+        height: 60px;
+        line-height: 60px;
+        div{
+            float: left;
+            font-size: 20px;
+            color: #494949;
+        }
+        ul{
+            float: left;
+            margin-left: 300px;
+            li{
+                float: left;
+                a{
+                    font-size: 16px;
+                    color: #868686;
+                    padding: 0 30px;
+                    &:hover{
+                        color: #3eb0fe;
+                    }
+                }
+            }
+        }
+        .more{
+            float: right;
+            margin-right: 30px;
+            font-size: 12px;
+            color: #a5a5a5;
+        }
+    }
+    .bd{
+
+        ul li{
+            float: left;
+            width: 228px;
+            height: 270px;
+            margin-left: 15px;
+            &:nth-child(1){
+                margin-left: 0;
+            }
+            img{
+                width: 100%;
+            }
+            h4{
+                margin: 25px 0 20px 20px;
+                font-size: 14px;
+                color: #050505;
+            }
+            p{
+                margin-left: 20px;
+                font-size: 12px;
+                color: #999;
+                span{
+                    color: #ff7c2d;
+                }
+            }
+        }
+    }
+}
+// footer
+.footer{
+    height: 480px;
+    background-color: #fff;
+    .w{
+        // 给子元素上外边距，会出现上外边距重叠问题
+        padding-top: 30px;
+        .copyright{
+            float: left;
+            margin-left: 20px;
+            p{
+                font-size: 12px;
+                color: #666;
+                margin: 20px 0;
+            }
+            .app{
+                display: block;
+                width: 116px;
+                height: 32px;
+                border: 1px solid #00a4ff;
+                text-align: center;
+                line-height: 32px;
+                color: #00a4ff;
+            }
+        }
+        .links{
+            float: right;
+            dl{
+                float: left;
+                margin-left: 100px;
+                &:nth-child(3){
+                    margin-right: 30px; 
+                }
+            }
+            dt{
+                font-size: 16px;
+                color: #333333;
+                margin-bottom: 15px;
+            }
+            dd{
+                margin-top: 10px;
+                a{
+                    font-size: 12px;
+                    color: #333333;
+                }
+            }
+        }
+    }
+}
